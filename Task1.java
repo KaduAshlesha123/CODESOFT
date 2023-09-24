@@ -13,7 +13,7 @@ class Task1{
        for(int i=0;i<5;i++){
         System.out.println(" Remaining chances "+count);
             do{
-                System.out.println("Enter number between 1 - 99");
+                System.out.println("Enter number between 1 - 100");
                 userNo=sc.nextInt();
             }while(userNo < 0 || userNo >100);
             
@@ -28,6 +28,8 @@ class Task1{
 
            count--;
         }
+        if(count==0)
+        System.out.println("oops!  you run out of chances");
             
     }
 
